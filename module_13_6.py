@@ -16,13 +16,6 @@ button = InlineKeyboardButton(text='Рассчитать норму калори
 button2 = InlineKeyboardButton(text='Формулы расчёта', callback_data='formulas')
 ikb.row(button, button2)
 
-start_menu = ReplyKeyboardMarkup(
-    keyboard=[
-        [KeyboardButton(text='')],
-    [KeyboardButton(text= '')]
-    ], resize_keyboard=True
-)
-
 class UserState(StatesGroup):
     age = State()
     growth = State()
